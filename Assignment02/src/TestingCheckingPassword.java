@@ -1,7 +1,7 @@
 public class TestingCheckingPassword {
 
 	public static void main(String[] args) {
-		// make a PasswordStrengthChecker
+		// make a CheckingPassword
 		CheckingPassword checker = new CheckingPassword();
 
 		// testing all possible passwords

@@ -1,18 +1,17 @@
 import java.util.List;
 
-public class PermutationGeneratorTest {
+public class TestingScrambleWords {
 
     public static void main(String[] args) {
-        // Create an instance of PermutationGenerator
-        PermutationGenerator generator = new PermutationGenerator();
+        // create ScrambleWords
+        ScrambleWords generator = new ScrambleWords();
         
-        // Define a test input
-        String input = "ABCD";
+        String input = "hello";
         
-        // Generate permutations
+        // make a list of all the permutations
         List<String> permutations = generator.generatePermutations(input.toCharArray());
         
-        // Print the results
+        // Print the words
         System.out.println("Permutations of \"" + input + "\":");
         for (String perm : permutations) {
             System.out.println(perm);

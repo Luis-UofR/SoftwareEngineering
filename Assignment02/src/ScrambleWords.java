@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class PermutationGenerator {
+public class ScrambleWords {
 
     /**
      * Generates all permutations of the given character array.

@@ -14,7 +14,7 @@ public class ScrabbleApp {
     private JFrame frame;
     private JTextField textField;
     private JTextArea textArea;
-    private PermutationGenerator permutationGenerator;
+    private ScrambleWords permutationGenerator;
 
     /**
      * Launch the application.
@@ -36,7 +36,7 @@ public class ScrabbleApp {
      * Create the application.
      */
     public ScrabbleApp() {
-        permutationGenerator = new PermutationGenerator();
+        permutationGenerator = new ScrambleWords();
         initialize();
     }
 
