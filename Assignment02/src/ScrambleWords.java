@@ -4,23 +4,23 @@ import java.util.List;
 public class ScrambleWords {
 
     /**
-     * Generates all permutations of the given character array.
+     * Make permutations of the character array.
      * 
      * @param arr The character array to permute.
-     * @return A list of all permutations as strings.
+     * @return All permutations.
      */
-    public List<String> generatePermutations(char[] arr) {
+    public List<String> createPerms(char[] arr) {
         List<String> results = new ArrayList<>();
         permute(arr, 0, results);
         return results;
     }
 
     /**
-     * Recursively generate all permutations of a given character array.
+     * Using recursion, make permutations of the character array.
      * 
      * @param arr     The character array to permute.
-     * @param index   The current index for recursion.
-     * @param results The list to store generated permutations.
+     * @param index   The index for recursion.
+     * @param results The list of permutations.
      */
     private void permute(char[] arr, int index, List<String> results) {
         if (index == arr.length - 1) {
@@ -35,7 +35,7 @@ public class ScrambleWords {
     }
 
     /**
-     * Swaps two elements in a character array.
+     * Swaps the elements in a character array.
      * 
      * @param arr The character array.
      * @param i   The first index.

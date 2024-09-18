@@ -9,7 +9,7 @@ public class TestingScrambleWords {
         String input = "hello";
         
         // make a list of all the permutations
-        List<String> permutations = generator.generatePermutations(input.toCharArray());
+        List<String> permutations = generator.createPerms(input.toCharArray());
         
         // Print the words
         System.out.println("Permutations of \"" + input + "\":");
